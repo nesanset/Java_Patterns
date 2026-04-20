@@ -1,17 +1,17 @@
 package mephi.patterns;
 
-public class DoubleOlenina extends ModifierDecorator{
-    public DoubleOlenina(Eat eat){
+public class DoubleOlenina extends ModifierDecorator {
+    public DoubleOlenina(Eat eat) {
         super(eat);
     }
 
     @Override
-    public String getDesc(){
-        return eat.getDesc()+" +двойная олениена";
+    public String getDesc() {
+        return super.getDesc() + " +двойная оленина";
     }
 
     @Override
-    public int getPrice(){
-        return eat.getPrice()+20;
+    public int getPrice() {
+        return super.getPrice() + 20;
     }
 }

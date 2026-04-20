@@ -1,17 +1,17 @@
 package mephi.patterns;
 
-public class Berries extends ModifierDecorator{
-    public Berries(Eat eat){
+public class Berries extends ModifierDecorator {
+    public Berries(Eat eat) {
         super(eat);
     }
 
     @Override
-    public String getDesc(){
-        return eat.getDesc()+" +снежные ягоды";
+    public String getDesc() {
+        return super.getDesc() + " +снежные ягоды";
     }
 
     @Override
-    public int getPrice(){
-        return eat.getPrice()+5;
+    public int getPrice() {
+        return super.getPrice() + 5;
     }
 }

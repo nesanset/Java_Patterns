@@ -1,6 +1,6 @@
 package mephi.patterns;
 
-class Ragu implements Eat{
+public class Ragu implements Eat{
     @Override
     public String getDesc(){
         return "Нордское рагу";
